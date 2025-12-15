@@ -1,0 +1,13 @@
+body{
+    background-color: rgb(71, 209, 243);
+}
+h1{
+    font-size: xx-large;
+    font-weight: 400;
+    padding: 40;
+    text-decoration: underline;
+}
+section{
+    padding: 2%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

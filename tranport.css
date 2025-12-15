@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(242, 252, 250);
+    text-align: center;
+}
+h1 {
+    font-size: xx-large;
+    display: inline-block;
+    text-decoration: underline;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+information{
+    color:rgb(250, 5, 5);
+    font-size:larger;
+    font-weight: bolder;
+    font-family: cursive;
+}
+caption{
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 10px;
+    font-display: swap;
+    text-align:center ;
+    text-decoration: underline;
+}
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-size: large;
+}   
+th, td {
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+}
+th {
+    background-color: #6aedf7f6;
+    color: white;
+    font-size: large;
+}
+p{
+    font-size: x-large;
+    font-weight: bold;
+    color: rgb(27, 27, 27);
+    font-weight: 500px; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: none;
+}
+

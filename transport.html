@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Transport - PCEA Kiambu Academy</title>
+  <link rel="stylesheet" href="tranport.css">
+</head>
+<body>
+<h1>TRANSPORT</h1>
+
+   <information>
+    <h3>NOTE:
+              ONE WAY TRANSPORT IS 3/4 OR 0.75% OF THE WHOLE TRANSPORT COST. </h3>
+   </information>
+    <table border="2">
+      <caption>School Transport Routes and Charges</caption>
+      <tr>
+          <th>S/N</th>
+          <th>ZONE</th>
+          <th>Route</th>
+          <th>Charges</th>
+      </tr>
+      <tr>
+          <td>1.</td>
+          <td>A</td>
+          <td>Before kangoya police station,Before Indian Bazaar</td>
+          <td>Ksh 4,420/=</td>
+      </tr>
+      <tr>
+          <td>2.</td>
+          <td>B</td>
+          <td>Indian Bazaar,Kangoya,karia,Prison,Ngegu & Kiambu Town</td>
+          <td>Ksh 5050/=</td>
+      </tr>
+      <tr>
+          <td>3.</td>
+          <td>C</td>
+          <td>Kirigiti,Mwandus & Turitu regions</td>
+          <td>Ksh 5350/=</td>
+      </tr>
+      <tr>
+        <td>4.</td>
+        <td>D</td>
+        <td>Njathaini,Kiambu high,Ndumberi,Riabai & Mada regions</td>
+        <td>6050/=</td>
+      </tr>
+      <tr>
+        <td>5.</td>
+        <td>E</td>
+        <td>Thindigua,By pass,Gitamaiyu,Tinganga & Kanunga regions</td>
+       <td>7050/=</td>
+      </tr>
+      <tr> 
+        <td>6.</td>
+        <td>F</td>
+        <td>Banana regions</td>
+        <td>9050/=</td>
+      </tr>
+      </table>
+
+  <section>
+    <h2>Book School Transport</h2>
+    <form id="transportForm" method="POST" action="transport.php">
+
+      <label for="studentName">Student Name:</label>
+      <input type="text" id="studentName" name="studentName" required><br><br>
+      
+      <label for="Zone_id">Select Zone:</label>
+      <select id="Zone_id" name="Zone_id" required>
+        <option value="">--Choose Zone--</option>
+        <option value="Zone A">Zone A - Before Kangoya Police Station, Before Indian Bazaar (Ksh 4,420)</option>
+        <option value="Zone B">Zone B - Indian Bazaar, Kangoya, Karia, Prison, Ngegu & Kiambu Town (Ksh 5,050)</option>
+        <option value="Zone C">Zone C - Kirigiti, Mwandus & Turitu regions (Ksh 5,350)</option>
+        <option value="Zone D">Zone D - Njathaini, Kiambu High, Ndumberi, Riabai & Mada regions (Ksh 6,050)</option>
+        <option value="Zone E">Zone E - Thindigua, By Pass, Gitamaiyu, Tinganga & Kanunga regions (Ksh 7,050)</option>
+        <option value="Zone F">Zone F - Banana regions (Ksh 9,050)</option>
+      </select><br><br>
+
+      <label for="parent_Phone">Parent/Guardian Phone:</label>
+      <input type="tel" id="parent_Phone" name="parent_Phone" required><br><br>
+      <button type="submit" name="sb">Book Transport</button>
+      <label>
+      <input type="checkbox" name="is_one_way" value="1"> One-way transport
+      </label><br><br>
+    </form>
+ 
+    <p id="thankYouMsg" style="display:none;">Thank you for booking our transport!</p>
+  </section>
+
+  <script>
+    // Remove the client-side prevention since we need server-side processing
+    // The form will now submit normally to transport.php
+  </script>
+  
+  <script src="transport.js"></script>
+</body>
+</html>
